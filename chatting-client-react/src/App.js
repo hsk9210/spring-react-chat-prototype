@@ -51,7 +51,7 @@ class App extends React.Component {
   }
 
   render() {
-    const wsSourceUrl = "http://localhost:8080/chatting";
+    const wsSourceUrl = "http://15.164.234.109:8080/chatting";
     return (
       <div>
         <TalkBox topic="/topic/public" currentUserId={ this.randomUserId }

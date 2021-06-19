@@ -36,7 +36,7 @@ public class KafkaConfig {
     public Map<String, Object> producerConfigs() {
 
         return ImmutableMap.<String, Object>builder()
-                .put("bootstrap.servers", "localhost:9092")//kafka server ip & port
+                .put("bootstrap.servers", "15.164.234.109:9092")//kafka server ip & port
                 .put("key.serializer", IntegerSerializer.class)
                 .put("value.serializer", JsonSerializer.class)//Object json parser
                 .put("group.id", "spring-boot-test") // chatting  group id
@@ -58,7 +58,7 @@ public class KafkaConfig {
     @Bean
     public Map<String, Object> consumerConfigs() {
         return ImmutableMap.<String, Object>builder()
-                .put("bootstrap.servers", "localhost:9092")
+                .put("bootstrap.servers", "15.164.234.109:9092")
                 .put("key.deserializer", IntegerDeserializer.class)
                 .put("value.deserializer", JsonDeserializer.class)
                 .put("group.id", "spring-boot-test")

@@ -15,7 +15,7 @@ class SampleComponent extends React.Component {
     return (
       <div>
         hello
-        <SockJsClient url='http://localhost:8080/app' topics={['/topics/public']}
+        <SockJsClient url='http://15.164.234.109:8080/app' topics={['/topics/public']}
             onMessage={(msg) => { console.log(msg); }}
             ref={ (client) => { this.clientRef = client }} />
       </div>
